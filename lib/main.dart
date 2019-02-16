@@ -5,7 +5,7 @@ void main() {
   runApp(
     MaterialApp(
       title: 'Daily',
-      home: HomePage(),
+      home: SafeArea(child: HomePage()),
     )
   );
 }
