@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:daily/attributes.dart';
+
+final ThemeData theme = buildTheme();
+
 
 class HomePage extends StatelessWidget {
   @override
@@ -25,7 +29,9 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text("Task List"),
+                Text("Task", style: Theme.of(context).textTheme.title,),
+                Padding(padding: EdgeInsets.only(left: 4.0),),
+                Text("Lists", style: Theme.of(context).textTheme.caption,),
 
                 Expanded(
                   child: Container(
@@ -46,13 +52,14 @@ class HomePage extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 48.0),
                     child: Center(
                       child: Container(
-                        decoration: ShapeDecoration(
+                      decoration: ShapeDecoration(
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0),
-                              side: BorderSide(color: Colors.grey)),
+                              side: BorderSide(color: Colors.grey), ),
+
 
                         ),
-                        width: 41.0,
-                        height: 40.0,
+                        width: 39.0,
+                        height: 38.0,
                         child: Icon(
                           Icons.add,
                           size: 20.0,
@@ -63,7 +70,7 @@ class HomePage extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.only(top: 16.0),
-                    child: Text("Add List"),
+                    child: Text("Add List", style: Theme.of(context).textTheme.display2),
                   )
                 ],
               ),
