@@ -12,12 +12,15 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+
             Container(
-                margin: EdgeInsets.all(35.0),
+                margin: EdgeInsets.only(top: 24.0, left: 8.0),
                 width: 80,
                 height: 90,
-                child: Image.asset('assets/images/logo.jpg')
+                child: Icon(Icons.access_time, size: 48.0,)
             ),
+            SizedBox(height: 48.0,),
+
             Row(
               children: <Widget>[
                 Expanded(
@@ -55,8 +58,6 @@ class HomePage extends StatelessWidget {
                       decoration: ShapeDecoration(
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0),
                               side: BorderSide(color: Colors.grey), ),
-
-
                         ),
                         width: 39.0,
                         height: 38.0,
