@@ -27,6 +27,11 @@ TextTheme buildAppTextTheme(TextTheme baseText) {
       fontSize: 12.0,
       color: Colors.grey,
       fontWeight: FontWeight.w400
+    ),
+    display1: baseText.display1.copyWith(
+      fontSize: 17.0,
+      color: Colors.white,
+      fontWeight: FontWeight.bold,
     )
   ).apply(
     fontFamily: "Roboto Mono"
